@@ -111,6 +111,105 @@ nav {
 
 /* Navbar CSS finish */
 
+/* starting service section  */
+.services {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 80px;
+
+	position: absolute;
+	width: 864px;
+	height: 1040px;
+	left: 288px;
+	top: 850px;
+}
+
+.image__add__text {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0px;
+	gap: 64px;
+	width: 864px;
+	height: 200px;
+}
+.left__img {
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	/* background: url(image.png); */
+	/* box-shadow: 0px 12px 24px -8px rgba(0, 107, 116, 0.3); */
+	border-radius: 24px;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+
+.text__place {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 0px;
+	gap: 24px;
+	width: 600px;
+	height: 149px;
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.hijoma {
+	width: 67px;
+	height: 29px;
+
+	/* Smaller heading */
+
+	font-family: "OSC";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	/* identical to box height, or 29px */
+	color: #222222;
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+}
+.text {
+	width: 600px;
+	height: 96px;
+
+	/* Body text */
+
+	font-family: "OS";
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	/* or 24px */
+
+	color: #444444;
+
+	/* Inside auto layout */
+
+	flex: none;
+	order: 1;
+	flex-grow: 0;
+}
+
+.main__in__btn {
+	box-sizing: border-box;
+	position: absolute;
+	width: 189px;
+	height: 47px;
+	left: 325px;
+	top: 1100px;
+}
+/* finishing service section  */
+
 /* Footer CSS start */
 
 footer {
@@ -122,5 +221,4 @@ footer {
 	color: #fff;
 }
 
-/* test */
 /* Footer CSS finish */
