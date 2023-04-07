@@ -111,6 +111,85 @@ nav {
 
 /* Navbar CSS finish */
 
+/* Footer CSS start */
+
+footer {
+	padding: 24px 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #222;
+	color: #fff;
+
+	position: absolute;
+	width: 1440px;
+	height: 97.94px;
+	left: 0px;
+	top: 2370px;
+}
+
+header {
+	position: absolute;
+	width: 1440px;
+	height: 97.94px;
+	left: 0px;
+	top: 0px;
+}
+
+/* Footer CSS finish */
+
+/* hero part start */
+.hero {
+	position: absolute;
+	width: 1440px;
+	height: 533px;
+	left: 0px;
+	top: 98px;
+	/* display: flex;
+	flex-direction: row; */
+
+	background: #0eb4c1;
+}
+
+/* hero text and content */
+.right__text {
+	position: absolute;
+	font-family: OS;
+	width: 500px;
+	height: 293px;
+	left: 170px;
+	top: 120px;
+}
+
+.right__text h1 {
+	font-family: OSC;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 120%;
+	color: #ffffff;
+}
+
+.right__text p {
+	font-family: OS;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: #ffffff;
+}
+.right__text button {
+	margin-top: 23px;
+	/*  */
+}
+
+.hero__img {
+	position: absolute;
+	width: 423px;
+	height: 503rem;
+	left: 847px;
+	top: 29px;
+}
 /* starting service section  */
 .services {
 	display: flex;
@@ -126,6 +205,21 @@ nav {
 	top: 850px;
 }
 
+.service__heading {
+	position: absolute;
+	width: 8.3rem;
+	height: 2.7rem;
+	left: 40.87rem;
+	top: 47rem;
+
+	font-family: OSC;
+	font-weight: 700;
+	font-size: 2.2rem;
+	line-height: 120%;
+	color: #000;
+	text-transform: uppercase;
+	align-items: center;
+}
 .image__add__text {
 	display: flex;
 	flex-direction: row;
@@ -164,9 +258,6 @@ nav {
 .hijoma {
 	width: 67px;
 	height: 29px;
-
-	/* Smaller heading */
-
 	font-family: "OSC";
 	font-style: normal;
 	font-weight: 700;
@@ -192,9 +283,6 @@ nav {
 	/* or 24px */
 
 	color: #444444;
-
-	/* Inside auto layout */
-
 	flex: none;
 	order: 1;
 	flex-grow: 0;
@@ -208,17 +296,80 @@ nav {
 	left: 325px;
 	top: 1100px;
 }
-/* finishing service section  */
 
-/* Footer CSS start */
-
-footer {
-	padding: 24px 170px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #222;
-	color: #fff;
+.register {
+	position: absolute;
+	width: 1440px;
+	height: 253px;
+	left: 1px;
+	top: 2117px;
+	background-color: #0eb4c1;
+	text-align: center;
 }
 
-/* Footer CSS finish */
+.register h2 {
+	text-align: center;
+	height: 2.7rem;
+	width: 23rem;
+	position: relative;
+	left: 33.6rem;
+	padding-top: 4rem;
+	font-family: OSC;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 2.25rem;
+	line-height: 120%;
+	/* or 43px */
+	color: #ffffff;
+}
+
+.btns__container {
+	display: flex;
+	justify-content: center;
+	margin-top: 2rem;
+	gap: 2rem;
+}
+
+.registr__btn {
+	box-sizing: border-box;
+	height: 42px;
+	padding: 6px 24px;
+	border-radius: 8px;
+	border: 2px solid #ffffff;
+}
+/* finishing service section  */
+@media screen and (max-width: 300px) {
+	.services {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 0px;
+		font-size: 1rem;
+		position: absolute;
+		width: 20rem;
+		height: 35rem;
+		left: 28px;
+		top: 850px;
+	}
+	.menu {
+		display: none;
+	}
+
+	.logo_wrap {
+		float: left;
+	}
+
+	footer {
+		display: none;
+	}
+
+	nav {
+		padding: 20px;
+		float: left;
+		align-items: center;
+	}
+	nav span,
+	button {
+		display: none;
+	}
+}
