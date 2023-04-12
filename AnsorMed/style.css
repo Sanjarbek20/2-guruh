@@ -94,6 +94,10 @@ nav {
 	margin-left: 1rem;
 }
 
+.logo_wrap span:hover {
+	color: #de2e54;
+}
+
 .menu {
 	display: flex;
 	list-style: none;
@@ -107,6 +111,11 @@ nav {
 	line-height: 150%;
 	letter-spacing: 2px;
 	text-transform: uppercase;
+}
+
+.menu li:hover {
+	color: #de2e54;
+	cursor: pointer;
 }
 
 /* Navbar CSS finish */
@@ -299,46 +308,52 @@ header {
 
 .register {
 	position: absolute;
-	width: 1440px;
-	height: 253px;
+	width: 100vw;
+	height: 16rem;
 	left: 1px;
 	top: 2117px;
-	background-color: #0eb4c1;
 	text-align: center;
+	background-color: #0eb4c1;
+	padding: 4rem 0;
 }
 
 .register h2 {
-	text-align: center;
-	height: 2.7rem;
-	width: 23rem;
-	position: relative;
-	left: 33.6rem;
-	padding-top: 4rem;
 	font-family: OSC;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 2.25rem;
-	line-height: 120%;
-	/* or 43px */
-	color: #ffffff;
+	margin-bottom: 2.5rem;
 }
 
-.btns__container {
-	display: flex;
-	justify-content: center;
-	margin-top: 2rem;
-	gap: 2rem;
+.btns__container :first-child {
+	margin-right: 2.25rem;
+}
+.btns__container :last-child {
+	margin-left: 2.25rem;
 }
 
-.registr__btn {
-	box-sizing: border-box;
-	height: 42px;
-	padding: 6px 24px;
-	border-radius: 8px;
-	border: 2px solid #ffffff;
-}
 /* finishing service section  */
+
 @media screen and (max-width: 300px) {
+	.hero {
+		width: 100%;
+		display: block;
+	}
+
+	.hero .right__text {
+		position: absolute;
+		left: 0;
+		padding: 1rem;
+		/* width: 60vw; */
+	}
+	.right__text p,
+	h1 {
+		font-size: small;
+		width: 80vw;
+		padding: 0 1.4rem;
+	}
+
+	.right__text > button {
+		margin-left: 2.5rem;
+	}
+
 	.services {
 		display: flex;
 		flex-direction: column;
@@ -346,10 +361,56 @@ header {
 		padding: 0px;
 		font-size: 1rem;
 		position: absolute;
-		width: 20rem;
+		width: 90vw;
 		height: 35rem;
-		left: 28px;
+		left: 0.5rem;
 		top: 850px;
+	}
+
+	.service__heading {
+		position: absolute;
+		width: max-content;
+		height: 2.7rem;
+		left: 6rem;
+		top: 47rem;
+	}
+
+	.services .text {
+		display: none;
+	}
+
+	.hijoma {
+		position: absolute;
+		left: 5rem;
+		top: 12rem;
+		width: 40vw;
+		background-color: #fff;
+		border-radius: 6px;
+		padding: 8px;
+		text-align: center;
+		cursor: pointer;
+	}
+
+	.hijoma:active,
+	.hijoma:hover,
+	.services__imgs:active {
+		transform: scale(1.2);
+		opacity: 0.8;
+	}
+
+	.services__imgs {
+		position: absolute;
+		left: 0%;
+		height: 18rem;
+		display: inline-block;
+	}
+
+	.main__in__btn {
+		position: absolute;
+		left: 1.2rem;
+		width: 80vw;
+		margin-top: 3rem;
+		background-color: #0eb4c1;
 	}
 	.menu {
 		display: none;
@@ -367,9 +428,27 @@ header {
 		padding: 20px;
 		float: left;
 		align-items: center;
+		justify-content: space-between;
+		gap: 2.5rem;
 	}
-	nav span,
-	button {
+	nav span {
 		display: none;
+	}
+
+	.register h2 {
+		width: 75vw;
+		margin: auto;
+	}
+	.btns__container :first-child {
+		margin-right: 1rem;
+	}
+	.btns__container :last-child {
+		margin-left: 1rem;
+	}
+
+	.registr__btn {
+		width: 75vw;
+		text-align: center;
+		margin: 1rem;
 	}
 }
